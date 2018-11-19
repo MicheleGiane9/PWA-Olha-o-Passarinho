@@ -1,0 +1,7 @@
+{
+  "name": "pwa-olhaPassarinho",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

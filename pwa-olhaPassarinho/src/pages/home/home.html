@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Lista de Aves</ion-title>
+</ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-searchbar 
+  [(ngModel)]="searchTerm"
+  (ionInput)="filterItems()" 
+  placeholder="Pesquisar......" >
+</ion-searchbar>
+  <ion-list>
+     <button ion-item *ngFor="let feed of feeds" (click)="openDetails(feed)">
+        <ion-thumbnail item-left>
+            <img [src]="feed.gsx$urlimagem.$t">
+         </ion-thumbnail>
+          {{feed.gsx$nomecomum.$t}}
+    </button>
+  </ion-list>
+  </ion-content>
+
+
+

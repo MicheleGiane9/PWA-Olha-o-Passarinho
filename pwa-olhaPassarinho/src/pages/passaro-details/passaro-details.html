@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar color="primary">
+      <ion-title>{{feed.gsx$nomecomum.$t}}</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+        <ion-list>
+            <ion-item>
+                <ion-label>Nome Cientifico</ion-label>
+                <ion-badge item-right style="font-style:italic">{{feed.gsx$nomecientifico.$t}}</ion-badge>
+              </ion-item>
+  
+            <ion-item>
+                <ion-label>Família</ion-label>
+                <ion-badge item-right>{{feed.gsx$familia.$t}}</ion-badge>
+            </ion-item>
+       
+           <ion-item>
+                <ion-label>Gramas</ion-label>
+                <ion-badge item-right>{{feed.gsx$gramas.$t}}</ion-badge>
+           </ion-item>
+       
+          <ion-item>
+              <ion-label>Tamanho</ion-label>
+              <ion-badge item-right>{{feed.gsx$tamanho.$t}}</ion-badge>
+         </ion-item>
+         
+         <ion-card>
+              <ion-title>Características</ion-title>
+              <ion-card-content>
+                 {{feed.gsx$caracteristicas.$t}}
+              </ion-card-content>
+            </ion-card>
+            
+      <ion-card>
+            <ion-title>Alimentação</ion-title>
+            <ion-card-content>
+               {{feed.gsx$alimentacao.$t}}
+            </ion-card-content>
+        </ion-card>
+   
+        <ion-card>
+            <ion-title>Ninhos</ion-title>
+            <ion-card-content>
+               {{feed.gsx$ninhos.$t}}
+            </ion-card-content>
+        </ion-card>  
+            <ion-card>
+            <ion-title>Canto Ave</ion-title>
+            <audio controls>   
+              <source src= "{{feed.gsx$somave.$t}}" type="audio/mpeg">  
+          </audio>
+      </ion-card>
+  </ion-list>
+  </ion-content>
+        
